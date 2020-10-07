@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GGpZDsH2qt7Ozt9oCteJyR" LanguageVersion="2020.3.0.42" Version="0.128">
+  <NugetDependency Id="JVdkLvvUnrLPV3QBUyUlm3" Location="VL.CoreLib" Version="2020.3.0-0042-g1a9a5c158d" />
+  <Patch Id="UDeUGIKYeahNp74zYqXEDu">
+    <Canvas Id="CfLpNXa6KSQL3VEr5887VP" DefaultCategory="KinectData" CanvasType="FullCategory">
+      <!--
+
+    ************************ KinectData ************************
+
+-->
+      <Node Name="KinectData" Bounds="250,165" Id="Dmz1GVSIuiMLSj8SQfwora">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="MdE1EhLxJ0KLCTKOBSxCKi">
+          <Canvas Id="KA8KhBohxD0MaGDH3C4eAx" CanvasType="Group">
+            <Node Bounds="221,284" Id="ICm1fWRA0xJPOVCUBl2LOD">
+              <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Kinect2" />
+              </p:NodeReference>
+              <Pin Id="JZQKoTjc9BjLCHe6AjlBIm" Name="Enabled" Kind="InputPin" />
+              <Pin Id="EkLKDjXeTErNwCcHkCyBn9" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="SH8lYJuXiJOMM4vU6OqOsd" Name="Is Open" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="MIviSpBn66cONQaOCvPuCI" Bounds="222,247" />
+            <Node Bounds="222,384,60,19" Id="HwEtkbqfK3ALyfKd5stV2o">
+              <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Skeletons" />
+              </p:NodeReference>
+              <Pin Id="NXCQ0O6POTONx7ubZICNax" Name="Device" Kind="InputPin" />
+              <Pin Id="ReYCcLULJ8SLk8wKAEOFyr" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Vz8ayFqqtvJNhHw2WYgUrG" SlotId="UaQnDpnz7qyNPiyYaUPxMh" Bounds="225,458" />
+            <ControlPoint Id="TyRMNnmzWkQN8AD6talhlu" Bounds="225,506" />
+            <Node Bounds="427,387,69,19" Id="EjZiSy0g9wzP3mhJOXSIoE">
+              <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Kinect2" />
+                <Choice Kind="ProcessAppFlag" Name="ColorImage" />
+              </p:NodeReference>
+              <Pin Id="UwfYiKTe8w1MjzAyCxChrh" Name="Device" Kind="InputPin" />
+              <Pin Id="JE6X2musSuePhMkn2RPglH" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="PiQA9BTf7lNLeiL5vCAYIw" SlotId="S0PyIvFDSn9LCvERQoL3bn" Bounds="429,458" />
+            <ControlPoint Id="QrA58DdWeKrML2EFpacZ61" Bounds="429,506" />
+            <Node Bounds="576,396" Id="KK76AzWfDVkN8v4yfHvQEp">
+              <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="DepthImage" />
+              </p:NodeReference>
+              <Pin Id="C5fFPGC2Zg3NYqHO0MBW1o" Name="Device" Kind="InputPin" />
+              <Pin Id="RiOnIHuMqfDLPjVl2CDxJJ" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="R4dSUF1aDiaMI8mfbYsgNg" SlotId="B7oXR7n0Ns0N6qlXvZWsev" Bounds="579,458" />
+            <ControlPoint Id="FUP6pnCxFh8O7umgxUFqNR" Bounds="579,506" />
+            <Pad Id="KCgRC0HDEmqOiTEoFuiebE" SlotId="Uuhy5rDCIpyLsT7cxmvpIP" Bounds="146,336" />
+            <ControlPoint Id="CXKgi1LUt0MOwHwHB2Rrb3" Bounds="146,364" />
+          </Canvas>
+          <Patch Id="P4QZmSfqlBUPkThYH5X7Sm" Name="Create" />
+          <ProcessDefinition Id="ESH5ATU5jltLXBxbMRPjAx" HasStateOut="true">
+            <Fragment Id="R34qqOKpBZYMTV5TjW74Nq" Patch="P4QZmSfqlBUPkThYH5X7Sm" Enabled="true" />
+            <Fragment Id="PApZUOtEa7qOY6tMdKSiva" Patch="LddXHvaO25YLMZidBNcJKN" Enabled="true" />
+            <Fragment Id="FpJcRVVQ7UZMfA4EcCzkMn" Patch="I3s319k49bvLZURN5IRjyf" />
+            <Fragment Id="Cr7Hcweq4y9LxdDriTKOhW" Patch="BrKn9qzGoVRQXHuwXaO3t4" />
+            <Fragment Id="C6MnEL3oGgaN4RRQHHvJ8S" Patch="Qc9KWNVtkQOLQDWluCmHTm" />
+            <Fragment Id="Roe6YTS5JVSOv1jA50n96g" Patch="IMTWp5fhi8qM1zmp5RcEbe" />
+          </ProcessDefinition>
+          <Link Id="BN9fbULIyeOOJzSOyWuvO8" Ids="MIviSpBn66cONQaOCvPuCI,JZQKoTjc9BjLCHe6AjlBIm" />
+          <Link Id="KFpqkvllq7QNTflsFMIAN1" Ids="CFtbbtTRpq3MFodOwMNtSI,MIviSpBn66cONQaOCvPuCI" IsHidden="true" />
+          <Patch Id="LddXHvaO25YLMZidBNcJKN" Name="Update">
+            <Pin Id="CFtbbtTRpq3MFodOwMNtSI" Name="Enabled" Kind="InputPin" />
+          </Patch>
+          <Link Id="FYHQVr9VljqNrno2cYNuP3" Ids="EkLKDjXeTErNwCcHkCyBn9,NXCQ0O6POTONx7ubZICNax" />
+          <Slot Id="UaQnDpnz7qyNPiyYaUPxMh" Name="Skeletons" />
+          <Link Id="IMaeqSgSal5PQa0jUZohlq" Ids="ReYCcLULJ8SLk8wKAEOFyr,Vz8ayFqqtvJNhHw2WYgUrG" />
+          <Link Id="HcURiVvavEXLStrbncroOC" Ids="Vz8ayFqqtvJNhHw2WYgUrG,TyRMNnmzWkQN8AD6talhlu" />
+          <Link Id="Rws7l6MEaLOO7mPbiDgbY8" Ids="TyRMNnmzWkQN8AD6talhlu,HPxqbQPCrEGP7Oz1sx6jDD" IsHidden="true" />
+          <Patch Id="I3s319k49bvLZURN5IRjyf" Name="GetSkeletons">
+            <Pin Id="HPxqbQPCrEGP7Oz1sx6jDD" Name="Skeletons" Kind="OutputPin" />
+          </Patch>
+          <Link Id="JcZ3biQKGvcO5C2V48xGRb" Ids="EkLKDjXeTErNwCcHkCyBn9,UwfYiKTe8w1MjzAyCxChrh" />
+          <Slot Id="S0PyIvFDSn9LCvERQoL3bn" Name="Color Image" />
+          <Link Id="MRVVh1vT9P1NYdvhwNRgXW" Ids="JE6X2musSuePhMkn2RPglH,PiQA9BTf7lNLeiL5vCAYIw" />
+          <Link Id="V1EvmiBbkTePEWgCBF31uQ" Ids="PiQA9BTf7lNLeiL5vCAYIw,QrA58DdWeKrML2EFpacZ61" />
+          <Link Id="KGEs3ihSzKPP6xhcjD3qlp" Ids="QrA58DdWeKrML2EFpacZ61,JVUVh0a2izvOfKUj68MJxa" IsHidden="true" />
+          <Patch Id="BrKn9qzGoVRQXHuwXaO3t4" Name="GetColorImage">
+            <Pin Id="JVUVh0a2izvOfKUj68MJxa" Name="Color Image" Kind="OutputPin" />
+          </Patch>
+          <Link Id="HnM7paumrBzMgiPViFQkSn" Ids="EkLKDjXeTErNwCcHkCyBn9,C5fFPGC2Zg3NYqHO0MBW1o" />
+          <Slot Id="B7oXR7n0Ns0N6qlXvZWsev" Name="Depth Image" />
+          <Link Id="UVgkBFrjfXJQO8YokVwdFg" Ids="RiOnIHuMqfDLPjVl2CDxJJ,R4dSUF1aDiaMI8mfbYsgNg" />
+          <Link Id="HhGcpY3m7owMkTsXWmL4mZ" Ids="R4dSUF1aDiaMI8mfbYsgNg,FUP6pnCxFh8O7umgxUFqNR" />
+          <Link Id="Jl58TFkowFyPq7uPemUrAa" Ids="FUP6pnCxFh8O7umgxUFqNR,B5fXxl945ZiPtkjquVK9mW" IsHidden="true" />
+          <Patch Id="Qc9KWNVtkQOLQDWluCmHTm" Name="GetDepthImage">
+            <Pin Id="B5fXxl945ZiPtkjquVK9mW" Name="Depth Image" Kind="OutputPin" />
+          </Patch>
+          <Slot Id="Uuhy5rDCIpyLsT7cxmvpIP" Name="Kinect" />
+          <Link Id="Ot7rFizFDTXQIjy8xufS0J" Ids="EkLKDjXeTErNwCcHkCyBn9,KCgRC0HDEmqOiTEoFuiebE" />
+          <Link Id="DwNaAN8MoYTPrC9uFFg4bE" Ids="KCgRC0HDEmqOiTEoFuiebE,CXKgi1LUt0MOwHwHB2Rrb3" />
+          <Link Id="F7pFru8ph44O1IGNbbwAkM" Ids="CXKgi1LUt0MOwHwHB2Rrb3,AtOpXknTVBfOFHAgZ96gsO" IsHidden="true" />
+          <Patch Id="IMTWp5fhi8qM1zmp5RcEbe" Name="GetKinect">
+            <Pin Id="AtOpXknTVBfOFHAgZ96gsO" Name="Kinect" Kind="OutputPin" />
+          </Patch>
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="EQIuanGdHMzLtsHgpNCAIh">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="LZqyCKriZUpNKgHNxOtHSZ">
+        <Canvas Id="JkzFChtnWBzLgWgWBiobyO" CanvasType="Group" />
+        <Patch Id="Hlh7Rmj4ZOXMGeY9yvZHnW" Name="Create" />
+        <Patch Id="CXYByqP13BeNZnVAHH9tTI" Name="Update" />
+        <ProcessDefinition Id="PJB24xje7JQNqyRCtQIDAe">
+          <Fragment Id="B2IRDtFI4PUPqBzQNrGlEU" Patch="Hlh7Rmj4ZOXMGeY9yvZHnW" Enabled="true" />
+          <Fragment Id="NdKkGcc8zfdPS72b4il8Ua" Patch="CXYByqP13BeNZnVAHH9tTI" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="OCmRepCilXvLEjH3ZSnKpC" Location="VL.Stride" Version="0.8.12-g88f31c4e46" />
+  <NugetDependency Id="QcYj5kPk9eEQCSkWTWeYSM" Location="VL.Devices.Kinect2" Version="1.2.0" />
+</Document>

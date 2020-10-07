@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="V0L2TuWvlcHQM8eke8eBPs" LanguageVersion="2020.3.0.42" Version="0.128">
+  <NugetDependency Id="O5KAxUOIbWkP5UNb43YAGK" Location="VL.CoreLib" Version="2020.3.0-0042-g1a9a5c158d" />
+  <Patch Id="OQBgbjYUMkZMnmIIeXB1ad">
+    <Canvas Id="Iam26cVWeZeNJDQEZ3tjDc" DefaultCategory="AudioAnalysis" CanvasType="FullCategory">
+      <!--
+
+    ************************ AudioAnalysis ************************
+
+-->
+      <Node Name="AudioAnalysis" Bounds="221,156" Id="H0BCkjCDnEJK9pjZKom098">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="I07GGywG5zBPiZXkPrCyIK">
+          <Canvas Id="JT8QdCrUMc6NpU3k377QAQ" CanvasType="Group">
+            <Node Bounds="489,187,225,19" Id="RCDZPgYBlADN7HDGlD9CmL">
+              <p:NodeReference LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="AudioEngine" />
+              </p:NodeReference>
+              <Pin Id="RUq1nrBzvA5NCploOk0RIF" Name="Driver" Kind="InputPin" />
+              <Pin Id="Q5eBbPNagedOT56cEITL1l" Name="Sample Rate" Kind="InputPin" />
+              <Pin Id="IistzG1W82qLKdmbsiwgk8" Name="Desired Input Channels" Kind="InputPin" />
+              <Pin Id="QlQ2ooXv7zLQSGEjjlGUz2" Name="Desired Output Channels" Kind="InputPin" />
+              <Pin Id="Kdc3MfOeFGuPn9otEIvHcB" Name="Show Control Panel" Kind="InputPin" />
+              <Pin Id="AGPO0t1YpbnQHt5JkfcbqP" Name="BPM" Kind="InputPin" />
+              <Pin Id="OJ75xlbnLzkObfGCcJ4xUX" Name="Loop" Kind="InputPin" />
+              <Pin Id="F3R5sKRF2uhL0nRJhXgvwN" Name="Loop Start Beat" Kind="InputPin" />
+              <Pin Id="TXp38XO5m90LWFXtEOvnX1" Name="Loop End Beat" Kind="InputPin" />
+              <Pin Id="EbOrOoBrlxiPDUUIyJvBo1" Name="Seek Beat" Kind="InputPin" />
+              <Pin Id="UNfvejR2PtgLIk8PVD8g62" Name="Do Seek" Kind="InputPin" />
+              <Pin Id="HZ6yBQmL9UtPdDhQIc3euG" Name="Play" Kind="InputPin" />
+              <Pin Id="TvJNOixZagUP4239ypFwid" Name="Time" Kind="OutputPin" />
+              <Pin Id="CYF4eCx36gBPumXVAVfksZ" Name="Beat" Kind="OutputPin" />
+              <Pin Id="G6qd73bYg3qLAuNDtYUIHE" Name="Driver Input Channels" Kind="OutputPin" />
+              <Pin Id="AxkhP7DJax8LVgBVKST4Ix" Name="Driver Output Channels" Kind="OutputPin" />
+              <Pin Id="GweMHn7jI8nMF9Tn6LjpWd" Name="Open Input Channels" Kind="OutputPin" />
+              <Pin Id="HkSCPqzosAhPmWpWuQriDQ" Name="Open Output Channels" Kind="OutputPin" />
+              <Pin Id="NMiTOyFY6xtLjgxCXzbUC1" Name="Buffer Size" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="589,360,34,19" Id="Ac97HsOXPRNP3qyqZm1ufy">
+              <p:NodeReference LastCategoryFullName="Audio.Analysis" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Gist" />
+              </p:NodeReference>
+              <Pin Id="EavACCEtqvlMFQdDXmYSd9" Name="Audio In" Kind="InputPin" />
+              <Pin Id="AkAUWjsQNbtPrVy6EJY8Zx" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="107,100,52,19" Id="UMzJWOjceyqM01hnphz8Ky">
+              <p:NodeReference LastCategoryFullName="Audio.Source" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="AudioIn" />
+              </p:NodeReference>
+              <Pin Id="RQEhvMML1unPfnWy5Fx57B" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="589,438,68,26" Id="TaIwnvwmAvwPUy2z1kaySy">
+              <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetPitchYin" />
+              </p:NodeReference>
+              <Pin Id="VEELi3Y67nVLwILyJPA339" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Lu7kD7TygoWN4gJ9JP3GlU" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="GZXho0G6m6aPnX72LyrGVp" Name="Pitch Yin" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="589,543,247,19" Id="Vsckttgk7kfPtsa2mB5PU6">
+              <p:NodeReference LastCategoryFullName="Audio.Analysis" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="MonophonicPitchTrackingFilter" />
+              </p:NodeReference>
+              <Pin Id="MNyaZDiSXKJOkEx40Rgmvc" Name="Pitch" Kind="InputPin" />
+              <Pin Id="Tp52cR6hTrSNZf3SBx4Wwy" Name="Amplitude" Kind="InputPin" />
+              <Pin Id="J47BClMwsMKPBhSGnrPhko" Name="Amplitude Min Threshold" Kind="InputPin" />
+              <Pin Id="IuKRy3DPqHULOS17MDiqNS" Name="Absolute Pitch" Kind="OutputPin" />
+              <Pin Id="RmwgjdlJHMgOtqKR5JwiVR" Name="Note Active" Kind="OutputPin" />
+              <Pin Id="Sh3iP6EXNhNLJMiosPNVqp" Name="New Note Bang" Kind="OutputPin" />
+            </Node>
+            <Pad Id="BDPZTb9JaaoM4ISpohw0G0" Comment="Amplitude Min Threshold" Bounds="833,515,35,15" ShowValueBox="true" isIOBox="true" Value="0.1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="ABE9j5GeJbPPg0BU3ED80k" SlotId="RC0QuewVANCOJPW7PYTCFv" Bounds="591,664" />
+            <Pad Id="ECsGLL5gH6zOqaiPVavz1Q" SlotId="MEzfJDrDXk0PJxNblEyiJK" Bounds="712,664" />
+            <Pad Id="KLR18FsyiPLQKRmaGkyVvo" SlotId="SY9cOkJCKXKO3fkck0Jmu4" Bounds="833,664" />
+            <ControlPoint Id="LpGxBFYUwjINz75EloGvfL" Bounds="591,711" />
+            <ControlPoint Id="ENJiwzg62CcPjvwkcclECb" Bounds="712,711" />
+            <ControlPoint Id="Ae7bq7tJTcLLPLG4RnEIJH" Bounds="833,711" />
+            <ControlPoint Id="KMhAsyHjwzOPUfP1V9Drer" Bounds="612,408" />
+            <Node Bounds="1058,402,85,19" Id="JcLnG2UQY1WNcVEwKRKBen">
+              <p:NodeReference LastCategoryFullName="Audio.Analysis" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="FFT" />
+              </p:NodeReference>
+              <Pin Id="N71MkrinXiuNa9kmuMFkYM" Name="Input" Kind="InputPin" />
+              <Pin Id="MgsxOBxS02IPMjkQMOpc4e" Name="Smoothing" Kind="InputPin" />
+              <Pin Id="Txp45CAkNhvNEvs7roUNKH" Name="Window Function" Kind="InputPin" />
+              <Pin Id="SVDxqOz05vxMrcExdQsvOl" Name="Buffer Size" Kind="InputPin" />
+              <Pin Id="NDIp8y62Ub5PwG8CjyAhuO" Name="db Range" Kind="InputPin" />
+              <Pin Id="GWbFUhnbI6mOfnvVM5AkSy" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="KlkclirdNqgLUY6r6QI0eK" Comment="Smoothing" Bounds="1080,318,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="BdINPnZAAiiO33NvkAfldz" Comment="Window Function" Bounds="1100,340,105,15" ShowValueBox="true" isIOBox="true" Value="Hann">
+              <p:TypeAnnotation LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="TypeFlag" Name="WindowFunction" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="VJvXXggV74xPGoalHtLsUp" Comment="Buffer Size" Bounds="1120,363,35,15" ShowValueBox="true" isIOBox="true" Value="512">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="VaYUdrRGhIZOtuwvXpbwlA" Comment="db Range" Bounds="1140,385,35,15" ShowValueBox="true" isIOBox="true" Value="60">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="HobT30tHDQEPskIfX1jEHv" SlotId="UKn3Xj2amVlN0YazbZDaY6" Bounds="1060,664" />
+            <ControlPoint Id="PKknI5xLC6iPA6oQjl3Ie0" Bounds="1060,711" />
+            <Node Bounds="1950,487,85,19" Id="ILWHNGFjCEIMU9hDSZA18O">
+              <p:NodeReference LastCategoryFullName="Audio.Analysis" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="FFTPitchRange" />
+              </p:NodeReference>
+              <Pin Id="PZcuTs6tWGKQXwiZ86133S" Name="FFT" Kind="InputPin" />
+              <Pin Id="RrGgFB813dwP8OyMq0s8eT" Name="Sample Rate" Kind="InputPin" />
+              <Pin Id="HvUCHKi8ONxLZVmHbxo1TU" Name="From Pitch" Kind="InputPin" />
+              <Pin Id="I5r54JDtY0hLNm8MtV39fp" Name="To Pitch" Kind="InputPin" />
+              <Pin Id="KdfFFK3857FOL54SbDvHck" Name="Resample Count" Kind="InputPin" />
+              <Pin Id="MQru1aI600tNXIfTDwOVwn" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="F0tlrTUzrhRQYCpcDsBUs9" Comment="From Pitch" Bounds="1992,395,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="LkruzTDS6WML41Y6oKHGtj" Comment="To Pitch" Bounds="2012,418,35,15" ShowValueBox="true" isIOBox="true" Value="128">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="EN7C4FxiD1BNBpOAUV1TLd" SlotId="C791o8bAehpPLKiX7JadPD" Bounds="1952,664" />
+            <Pad Id="NY48e6642VyOOF5dPoxFLn" Comment="Resample Count" Bounds="2032,460,35,15" ShowValueBox="true" isIOBox="true" Value="128">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <ControlPoint Id="As71kCf8jzRO7XkASoWvYh" Bounds="1952,711" />
+            <Pad Id="OuFXlZflv2QMSQpqxHJRpW" Comment="Sample Rate" Bounds="1972,352,53,15" ShowValueBox="true" isIOBox="true" Value="44100">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="589,478,96,19" Id="BfI6WcoTOl3NuQK44utYLz">
+              <p:NodeReference LastCategoryFullName="Audio.Utils" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FrequencyToPitch" />
+              </p:NodeReference>
+              <Pin Id="ELWlJV9vvphQKQqXEzwXui" Name="Frequency" Kind="InputPin" />
+              <Pin Id="NBmyoxJ2vTtOsa3TAPdGOQ" Name="Pitch" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1168,594,85,19" Id="TdOlT1VgG2wNtzcjz8NJxI">
+              <p:NodeReference LastCategoryFullName="Audio.Analysis" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="LinToLog" />
+              </p:NodeReference>
+              <Pin Id="Cw2NTpbzwy2MO8sdFZ9qCc" Name="Input" Kind="InputPin" />
+              <Pin Id="F3F5p15q8lIPHifei7BEUW" Name="Pow" Kind="InputPin" />
+              <Pin Id="KCryop2bWCSLvilCzhWBEx" Name="Min" Kind="InputPin" />
+              <Pin Id="E2ZfhijolylLAktAwNypsO" Name="Max" Kind="InputPin" />
+              <Pin Id="UaIxwbE0wsaPjMPOqIhRGE" Name="SampleRate" Kind="InputPin" />
+              <Pin Id="VMeRmvwBlK2PFtWnYSChcd" Name="Output" Kind="OutputPin" />
+              <Pin Id="Q2eeTkSALLKOL8vIvKgEkv" Name="Count" Kind="OutputPin" />
+              <Pin Id="TDnSyWEpuLyMymRBpLdyB6" Name="freq" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1405,491,326,19" Id="Nejcp7JSvTSP44QOgcBoBy">
+              <p:NodeReference LastCategoryFullName="Audio.Analysis" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FFT4Bands" />
+              </p:NodeReference>
+              <Pin Id="NkLRRbaYl3kOPldlrlUPsf" Name="Input" Kind="InputPin" />
+              <Pin Id="CkstmZnq9V8QORNJLxMF82" Name="SampleRate" Kind="InputPin" />
+              <Pin Id="FghDKGEFQwTOIMAyRuZ86k" Name="Gain" Kind="InputPin" />
+              <Pin Id="MAu6Gx0D3xALv3Lks3r13q" Name="Bass" Kind="OutputPin" />
+              <Pin Id="RFptUyrwf7TMjUaG3wOmy1" Name="LoMid" Kind="OutputPin" />
+              <Pin Id="CToKOvqrT6PLR8HqzZqcbW" Name="HiMid" Kind="OutputPin" />
+              <Pin Id="J9yoCmZrmf9PeRs7tPVj4V" Name="High" Kind="OutputPin" />
+            </Node>
+            <Pad Id="DrtpZ9XQIx6MtdqdbYHaZG" Comment="" Bounds="1424,534,40,90" ShowValueBox="true" isIOBox="true">
+              <p:ValueBoxSettings>
+                <p:maximum p:Type="Single">1</p:maximum>
+                <p:minimum p:Type="Single">0</p:minimum>
+                <p:showslider p:Type="Boolean">true</p:showslider>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="RgvR4S0rqKHP2sSKwdcUuj" Comment="" Bounds="1531,534,40,90" ShowValueBox="true" isIOBox="true">
+              <p:ValueBoxSettings>
+                <p:maximum p:Type="Single">1</p:maximum>
+                <p:minimum p:Type="Single">0</p:minimum>
+                <p:showslider p:Type="Boolean">true</p:showslider>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="L1EVL7zYAEDMKAlwbhyp2P" Comment="" Bounds="1639,534,40,90" ShowValueBox="true" isIOBox="true">
+              <p:ValueBoxSettings>
+                <p:maximum p:Type="Single">1</p:maximum>
+                <p:minimum p:Type="Single">0</p:minimum>
+                <p:showslider p:Type="Boolean">true</p:showslider>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="E0IfelNvGvSNVUrcIpKIeU" Comment="" Bounds="1743,534,40,90" ShowValueBox="true" isIOBox="true">
+              <p:ValueBoxSettings>
+                <p:maximum p:Type="Single">1</p:maximum>
+                <p:minimum p:Type="Single">0</p:minimum>
+                <p:showslider p:Type="Boolean">true</p:showslider>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="Gii1mE383BZN7ncPU9BWE3" SlotId="AIVFvMc2aIcQAoJ8Cr55XF" Bounds="1170,664" />
+            <ControlPoint Id="RcLOgRjHbtcLq0MoxESaqq" Bounds="1170,711" />
+            <Pad Id="Fz4NBPIjw2sLktnjAbIlzo" Comment="Pow" Bounds="1191,501,35,15" ShowValueBox="true" isIOBox="true" Value="4">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="FD9yRrdNj7oOFEstQ8vqFU" Comment="Min" Bounds="1210,520,35,15" ShowValueBox="true" isIOBox="true" Value="0.9">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="FW5jRVBQU21QHDskIOvBbI" Comment="Max" Bounds="1230,544,35,15" ShowValueBox="true" isIOBox="true" Value="0.42">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="CiotbMpHmCVPZRT1Ues0Ay" Comment="SampleRate" Bounds="1251,569,53,15" ShowValueBox="true" isIOBox="true" Value="44100">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="JChZcSsDrC2MBj3loF29pJ" SlotId="EzIAMHMnPBtNUsabqH2ZNH" Bounds="1407,664" />
+            <Pad Id="CiqgT7hsXgXQIHQWUj6H4Q" SlotId="O8vfe9XIYeQLW9cr40VpkI" Bounds="1514,664" />
+            <Pad Id="Azmck77aUrHN9nm6B9wZH9" SlotId="HONCSrY6qHdP2ztfd4XWJ0" Bounds="1621,664" />
+            <Pad Id="KtcCj3AGE8BMADlsS8gYYR" SlotId="JxjJuLO8CGzPaiaBJPvYDB" Bounds="1728,664" />
+            <ControlPoint Id="SLB95xJb4hUMskd5LuDPZo" Bounds="1407,711" />
+            <ControlPoint Id="FIzfnyomJYFLPb9UXyCshL" Bounds="1514,711" />
+            <ControlPoint Id="LGm9sjMQIgBPGY9q2tpvxN" Bounds="1621,711" />
+            <ControlPoint Id="FlBn2t3yo3SMEnfYeCvFuy" Bounds="1728,711" />
+            <Node Bounds="107,379,42,19" Id="PQwqHgwUhjpQSnE5WPuEUz">
+              <p:NodeReference LastCategoryFullName="Audio.Analysis" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Meter" />
+              </p:NodeReference>
+              <Pin Id="LIMfn9bPRdkMNPJf4vVzNb" Name="Input" Kind="InputPin" />
+              <Pin Id="BhdgVatxJcUO71XXZ8rNaM" Name="Level" Kind="OutputPin" />
+              <Pin Id="FmYcG96t5VxPXIXtuOYsZk" Name="Level dBs" Kind="OutputPin" />
+            </Node>
+            <Pad Id="MNHN6dqFDBtMiwIYVbEpJC" Comment="" Bounds="123,437,29,101" ShowValueBox="true" isIOBox="true">
+              <p:ValueBoxSettings>
+                <p:maximum p:Type="Single">1</p:maximum>
+                <p:minimum p:Type="Single">0</p:minimum>
+                <p:showslider p:Type="Boolean">true</p:showslider>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Node Bounds="266,491,89,19" Id="FDRuTgheZ1qO2tL27kx3oo">
+              <p:NodeReference LastCategoryFullName="Audio.Analysis" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="NormalizeMeter" />
+              </p:NodeReference>
+              <Pin Id="AbOdskAJWA0N8F3UswS9QS" Name="Amplitude" Kind="InputPin" />
+              <Pin Id="AkMdFa1t1dEOwvIbGe4sV7" Name="Responsiveness" Kind="InputPin" />
+              <Pin Id="IOCmwPiXGXcNlKSHoNGzxt" Name="Reset" Kind="InputPin" />
+              <Pin Id="BMyA4hAozHxQRstC68kMDs" Name="Temporal Adaptation" Kind="InputPin" />
+              <Pin Id="Lp0mO4g0UpoP6rBZOKzJry" Name="Enable" Kind="InputPin" />
+              <Pin Id="DF49KaxQPsZLO2ILrrVK0X" Name="Output" Kind="OutputPin" />
+              <Pin Id="P3jkwYihgPKQEikTF0zpEX" Name="Min Value" Kind="OutputPin" />
+              <Pin Id="K4Mlp6CchpSMEXsErIu9W0" Name="Max Value" Kind="OutputPin" />
+            </Node>
+            <Pad Id="MrDS3vxehshPrpTVPzeQMu" Comment="Enable" Bounds="352,439,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Vaa577u8jHwMQ6Hnq9DjaR" Comment="" Bounds="294,538,34,101" ShowValueBox="true" isIOBox="true">
+              <p:ValueBoxSettings>
+                <p:maximum p:Type="Single">1</p:maximum>
+                <p:minimum p:Type="Single">0</p:minimum>
+                <p:showslider p:Type="Boolean">true</p:showslider>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="RPLVooC04SHPji6OVyBAe8" SlotId="L80I77T4Eu8PkF6pyTlZIP" Bounds="110,664" />
+            <ControlPoint Id="IOcTNI2Wgy2L6rJhD0GSI7" Bounds="110,696" />
+            <Pad Id="JDoX299Vf22OGQ2UivKhFX" SlotId="CrBKkEgUaQjNlQ9UVr0f2F" Bounds="268,664" />
+            <ControlPoint Id="Ela7fBjsNVHLvEsXMHsUbP" Bounds="268,711" />
+            <Pad Id="K6W46j1otFrNPvRN1fj5Xy" Comment="" Bounds="617,604,35,15" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="Rq1ftIKRFeVO2RvRcqTXHJ" Comment="" Bounds="729,595,35,35" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="LiwJalZefTrP8aOA9W2xpO" Comment="" Bounds="855,598,35,35" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="Tz7MYv6KkNeOfe6ZFiOtUt" Comment="Driver" Bounds="492,44,108,15" ShowValueBox="true" isIOBox="true" Value="ASIO4ALL v2">
+              <p:TypeAnnotation LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="TypeFlag" Name="AsioInputDevice" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Sd5j66O1RpYNgN2YDj5jF5" Comment="Desired Input Channels" Bounds="531,123,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Ks5wryod9yaMslg1kNRJnM" Comment="Play" Bounds="742,131,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="PuwDnsn0qZAN8kTJQqR6bm" Comment="Temporal Adaptation" Bounds="331,396,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Kwj5413QOVpL8j8CVx3l1u" Comment="Responsiveness" Bounds="289,320,35,15" ShowValueBox="true" isIOBox="true" Value="0.05">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="K16W93J1VwLOGst1bR7bM4" Comment="Reset" Bounds="311,352,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Overlay Id="Sy8wvJW5hz1QXFjkwWVy0g" Name="Audio Input Source" Bounds="40,37,351,167" />
+            <Node Bounds="107,149,52,26" Id="GgzZzcEghTnLPx3PZRMO32">
+              <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetSlice" />
+                <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="BnWi4eAToxbL6r5pjcvtDZ" Name="Input" Kind="StateInputPin" />
+              <Pin Id="KBoMofbo9kONY70MuPyOlX" Name="Default Value" Kind="InputPin" />
+              <Pin Id="A98ngWnXkVxPUItOhihq7A" Name="Index" Kind="InputPin" />
+              <Pin Id="GtiQfYSZ5RvO21bZ3Vn8Li" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Qv4YSu7MsGVNiTTCHYAyhV" Comment="Audio Source Index" Bounds="181,127,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="DuCU6Jer4GTLNJ6ASwXTE5" Bounds="220,146,155,41" ShowValueBox="true" isIOBox="true" Value="(when you have multiple inputs from the device)">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="KiHMaPLAPsZQUBeFPrY4cE" Comment="Sample Rate" Bounds="511,79,64,15" ShowValueBox="true" isIOBox="true" Value="44100">
+              <p:TypeAnnotation LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
+                <Choice Kind="TypeFlag" Name="AudioSampleRate" />
+              </p:TypeAnnotation>
+            </Pad>
+          </Canvas>
+          <Patch Id="JTt94fInUlYMPOeVEeww3w" Name="Create" />
+          <ProcessDefinition Id="CkiAXvfXzqxLeh0veJUk0z" HasStateOut="true">
+            <Fragment Id="N8DG96oR5FyLHfqaVtrSWr" Patch="JTt94fInUlYMPOeVEeww3w" Enabled="true" />
+            <Fragment Id="U4WwgniarAlPuu7KZuLG5L" Patch="MoJYDRlvmZwNCpodyDe6ek" Enabled="true" />
+            <Fragment Id="A9zv9a35DZEL7RIFeBroMg" Patch="OXugeHunSXnLnj3Ytbidnu" />
+            <Fragment Id="PPQEZ3ZyVCUNhzGXlWgcYO" Patch="I1pksl23XDuOIMmU66vT8D" />
+            <Fragment Id="Lc1HpPUtcZWPn8vZklKNhS" Patch="SO1hkNZU00KPxz9kdJ1VdX" />
+            <Fragment Id="H6T4wUxoIspP7FoJjB68yW" Patch="DYcmfCK2FDFN4YgGEE7P0w" />
+            <Fragment Id="RVfMeHt7ZR1La2uv2Cj1UL" Patch="JrUyWcuneAiOAt368hbkdg" />
+            <Fragment Id="BI4PpYyYAVPQSe1SIANgii" Patch="Jgms8STmiAEOQdie6lH0l5" />
+            <Fragment Id="MDF4QZUP2saLSgkjWi1OC4" Patch="NUDyh4FVm84Nurc3QzMwiy" />
+            <Fragment Id="JO2036MayhNPfaXcoICCwz" Patch="O94KvdY9clwNn51V3XLn3S" />
+          </ProcessDefinition>
+          <Patch Id="MoJYDRlvmZwNCpodyDe6ek" Name="Update" />
+          <Link Id="DFNdPBbTqmtMx2IFn8kEOR" Ids="AkAUWjsQNbtPrVy6EJY8Zx,VEELi3Y67nVLwILyJPA339" />
+          <Link Id="Kzob1nZwA28LCeYM22S3wb" Ids="BDPZTb9JaaoM4ISpohw0G0,J47BClMwsMKPBhSGnrPhko" />
+          <Slot Id="RC0QuewVANCOJPW7PYTCFv" Name="Absolute Pitch" />
+          <Link Id="HHvnA2gqZ3hLExBEQjkwdA" Ids="IuKRy3DPqHULOS17MDiqNS,ABE9j5GeJbPPg0BU3ED80k" />
+          <Slot Id="MEzfJDrDXk0PJxNblEyiJK" Name="Note Active" />
+          <Link Id="FNj8RW8Tp51NcJejw1YjSK" Ids="RmwgjdlJHMgOtqKR5JwiVR,ECsGLL5gH6zOqaiPVavz1Q" />
+          <Slot Id="SY9cOkJCKXKO3fkck0Jmu4" Name="New Note Bang" />
+          <Link Id="NNko0ApYTp6N3eCkXY0vS8" Ids="Sh3iP6EXNhNLJMiosPNVqp,KLR18FsyiPLQKRmaGkyVvo" />
+          <Link Id="AohQMtEpneJPcor3AM6pBb" Ids="ABE9j5GeJbPPg0BU3ED80k,LpGxBFYUwjINz75EloGvfL" />
+          <Link Id="Icz0y09JoAbN2yBb32hgFo" Ids="LpGxBFYUwjINz75EloGvfL,FpVRYhdetWBNF04ZxZXPbT" IsHidden="true" />
+          <Link Id="C07ayGvdbZFOsN5XOsnxmn" Ids="ECsGLL5gH6zOqaiPVavz1Q,ENJiwzg62CcPjvwkcclECb" />
+          <Link Id="VnLG2SChEYSQR1aBGKSzG9" Ids="ENJiwzg62CcPjvwkcclECb,D2csdlsboloM19q69haFkv" IsHidden="true" />
+          <Link Id="GXtIY8mXIQhMmIh7KTQHNW" Ids="KLR18FsyiPLQKRmaGkyVvo,Ae7bq7tJTcLLPLG4RnEIJH" />
+          <Link Id="JqtBCScNE6RLNc79AUTD5K" Ids="Ae7bq7tJTcLLPLG4RnEIJH,USPDFM5uy6SNCeIBxJTyRh" IsHidden="true" />
+          <Patch Id="OXugeHunSXnLnj3Ytbidnu" Name="GetMonophonicPitchTracking">
+            <Pin Id="FpVRYhdetWBNF04ZxZXPbT" Name="Absolute Pitch" Kind="OutputPin" />
+            <Pin Id="D2csdlsboloM19q69haFkv" Name="Note Active" Kind="OutputPin" />
+            <Pin Id="USPDFM5uy6SNCeIBxJTyRh" Name="New Note Bang" Kind="OutputPin" />
+          </Patch>
+          <Link Id="NYJpRpLDzJYL8OLfgugg2Y" Ids="AkAUWjsQNbtPrVy6EJY8Zx,KMhAsyHjwzOPUfP1V9Drer" />
+          <Link Id="QOKQiAiDWvHOBaKUUXGjDn" Ids="KMhAsyHjwzOPUfP1V9Drer,DAsen5hdUyNQG42BDtcggM" IsHidden="true" />
+          <Patch Id="I1pksl23XDuOIMmU66vT8D" Name="GetGist">
+            <Pin Id="DAsen5hdUyNQG42BDtcggM" Name="Gist" Kind="OutputPin" />
+          </Patch>
+          <Link Id="A1NQ3I0WDMCL8Xh9IQYOjD" Ids="KlkclirdNqgLUY6r6QI0eK,MgsxOBxS02IPMjkQMOpc4e" />
+          <Link Id="NqBAfXDhSxTL6ITa5CsggE" Ids="BdINPnZAAiiO33NvkAfldz,Txp45CAkNhvNEvs7roUNKH" />
+          <Link Id="SkjCbAccqIJLesn7VlwTfr" Ids="VJvXXggV74xPGoalHtLsUp,SVDxqOz05vxMrcExdQsvOl" />
+          <Link Id="Okem0dadT5bLjrXiDW5Kys" Ids="VaYUdrRGhIZOtuwvXpbwlA,NDIp8y62Ub5PwG8CjyAhuO" />
+          <Slot Id="UKn3Xj2amVlN0YazbZDaY6" Name="FFT" />
+          <Link Id="MqNiC4DWDuWOq905JvW0yl" Ids="GWbFUhnbI6mOfnvVM5AkSy,HobT30tHDQEPskIfX1jEHv" />
+          <Link Id="K8YCgyM3oHwOC4fWrz5ZhR" Ids="HobT30tHDQEPskIfX1jEHv,PKknI5xLC6iPA6oQjl3Ie0" />
+          <Link Id="IbiMtqVkTkbPThkYrVcj8x" Ids="PKknI5xLC6iPA6oQjl3Ie0,UsfxuyAryVJMchavObGfzx" IsHidden="true" />
+          <Patch Id="SO1hkNZU00KPxz9kdJ1VdX" Name="GetFFT">
+            <Pin Id="UsfxuyAryVJMchavObGfzx" Name="FFT" Kind="OutputPin" />
+          </Patch>
+          <Link Id="PgBmh9FFWl0PGq5I3LppYJ" Ids="GWbFUhnbI6mOfnvVM5AkSy,PZcuTs6tWGKQXwiZ86133S" />
+          <Link Id="QW6KIG6oATQMWrv7GqLdg0" Ids="F0tlrTUzrhRQYCpcDsBUs9,HvUCHKi8ONxLZVmHbxo1TU" />
+          <Link Id="MLApHadp7wtQNy4RvTfJ3M" Ids="LkruzTDS6WML41Y6oKHGtj,I5r54JDtY0hLNm8MtV39fp" />
+          <Link Id="AIZmkYaV0ziNm0HHtWr2j1" Ids="MQru1aI600tNXIfTDwOVwn,EN7C4FxiD1BNBpOAUV1TLd" />
+          <Slot Id="C791o8bAehpPLKiX7JadPD" Name="FFTPitchRange" />
+          <Link Id="Ej5IL7zsIQYMYyAHGrUOM0" Ids="NY48e6642VyOOF5dPoxFLn,KdfFFK3857FOL54SbDvHck" />
+          <Link Id="TRaqanr4Si2MlLLXqRoaG7" Ids="EN7C4FxiD1BNBpOAUV1TLd,As71kCf8jzRO7XkASoWvYh" />
+          <Link Id="QKVaVQMg3OOPZ74ZceyCgE" Ids="As71kCf8jzRO7XkASoWvYh,EPDxqEQLtrDOTdJ7X2KubM" IsHidden="true" />
+          <Patch Id="DYcmfCK2FDFN4YgGEE7P0w" Name="GetFFTPitchRange">
+            <Pin Id="EPDxqEQLtrDOTdJ7X2KubM" Name="FFTPitchRange" Kind="OutputPin" />
+          </Patch>
+          <Link Id="VEzyrMOQT7PMYUP7IFdlos" Ids="OuFXlZflv2QMSQpqxHJRpW,RrGgFB813dwP8OyMq0s8eT" />
+          <Link Id="LZBEmJiP1WdM96y9LZ2akM" Ids="GZXho0G6m6aPnX72LyrGVp,ELWlJV9vvphQKQqXEzwXui" />
+          <Link Id="BjqZl4K5APMN8n6qUX27i5" Ids="NBmyoxJ2vTtOsa3TAPdGOQ,MNyaZDiSXKJOkEx40Rgmvc" />
+          <Link Id="Bf4qEUQ7GGQM3DenPhuTen" Ids="MAu6Gx0D3xALv3Lks3r13q,DrtpZ9XQIx6MtdqdbYHaZG" />
+          <Link Id="KgmEsHdCh1UOlai7m2j3Jv" Ids="RFptUyrwf7TMjUaG3wOmy1,RgvR4S0rqKHP2sSKwdcUuj" />
+          <Link Id="OndysUgJK1UQKkfBoFPxa6" Ids="CToKOvqrT6PLR8HqzZqcbW,L1EVL7zYAEDMKAlwbhyp2P" />
+          <Link Id="H8O0mrDgieuLGzOtC3Naba" Ids="J9yoCmZrmf9PeRs7tPVj4V,E0IfelNvGvSNVUrcIpKIeU" />
+          <Link Id="C2j6CqU6iQ3PROiA3JWskt" Ids="GWbFUhnbI6mOfnvVM5AkSy,Cw2NTpbzwy2MO8sdFZ9qCc" />
+          <Link Id="HsliDKK1pyKOkaS3Twjnv8" Ids="GWbFUhnbI6mOfnvVM5AkSy,NkLRRbaYl3kOPldlrlUPsf" />
+          <Slot Id="AIVFvMc2aIcQAoJ8Cr55XF" Name="LinearFFT" />
+          <Link Id="MsVTsZORUVoMh1EV6Amh0g" Ids="VMeRmvwBlK2PFtWnYSChcd,Gii1mE383BZN7ncPU9BWE3" />
+          <Link Id="P6kE66MajKfL6B5cCqpOao" Ids="Gii1mE383BZN7ncPU9BWE3,RcLOgRjHbtcLq0MoxESaqq" />
+          <Link Id="TB4mC9tYHqLNmaDq20P7Xi" Ids="RcLOgRjHbtcLq0MoxESaqq,Ak6PAZa8U5MPBQ8mh0NuXN" IsHidden="true" />
+          <Patch Id="JrUyWcuneAiOAt368hbkdg" Name="GetLinearFFT">
+            <Pin Id="Ak6PAZa8U5MPBQ8mh0NuXN" Name="LinearFFT" Kind="OutputPin" />
+          </Patch>
+          <Link Id="V5kGESNCxAFOdM9gssEuOx" Ids="Fz4NBPIjw2sLktnjAbIlzo,F3F5p15q8lIPHifei7BEUW" />
+          <Link Id="B4upcTGp5VdPVK1J9eJQsy" Ids="FD9yRrdNj7oOFEstQ8vqFU,KCryop2bWCSLvilCzhWBEx" />
+          <Link Id="SV1kb7Rk7IWLy9mS78hpWj" Ids="FW5jRVBQU21QHDskIOvBbI,E2ZfhijolylLAktAwNypsO" />
+          <Link Id="JVh63qIfcHjNxiG2Ki7XPD" Ids="CiotbMpHmCVPZRT1Ues0Ay,UaIxwbE0wsaPjMPOqIhRGE" />
+          <Slot Id="EzIAMHMnPBtNUsabqH2ZNH" Name="Bass" />
+          <Link Id="Vy1kRWb6xM3Orx5NQ9J7wB" Ids="MAu6Gx0D3xALv3Lks3r13q,JChZcSsDrC2MBj3loF29pJ" />
+          <Slot Id="O8vfe9XIYeQLW9cr40VpkI" Name="LoMid" />
+          <Link Id="QamBd8XDH4GLKxvilFrKIa" Ids="RFptUyrwf7TMjUaG3wOmy1,CiqgT7hsXgXQIHQWUj6H4Q" />
+          <Slot Id="HONCSrY6qHdP2ztfd4XWJ0" Name="HiMid" />
+          <Link Id="SIp8upNO2wRPw8mNhmIRRL" Ids="CToKOvqrT6PLR8HqzZqcbW,Azmck77aUrHN9nm6B9wZH9" />
+          <Slot Id="JxjJuLO8CGzPaiaBJPvYDB" Name="High" />
+          <Link Id="CBJ4EFXCZhsQOF5whSHZAB" Ids="J9yoCmZrmf9PeRs7tPVj4V,KtcCj3AGE8BMADlsS8gYYR" />
+          <Link Id="NvavKcuynDiOiHyvfSUTUu" Ids="JChZcSsDrC2MBj3loF29pJ,SLB95xJb4hUMskd5LuDPZo" />
+          <Link Id="K1MGCHQFlA7Ok6cW5RSzeA" Ids="SLB95xJb4hUMskd5LuDPZo,LNDeaiGf4sdPDs6eegZ0D5" IsHidden="true" />
+          <Link Id="PrNpTMGfPH0L6aTJtnp9e9" Ids="CiqgT7hsXgXQIHQWUj6H4Q,FIzfnyomJYFLPb9UXyCshL" />
+          <Link Id="JMglCndZcCwPrn5mokECWc" Ids="FIzfnyomJYFLPb9UXyCshL,DXfB2raa7pDOUj6tLWKUNf" IsHidden="true" />
+          <Link Id="TnY4Fh9EyCwLuQxcNAWTPR" Ids="Azmck77aUrHN9nm6B9wZH9,LGm9sjMQIgBPGY9q2tpvxN" />
+          <Link Id="SaooS533bsaOAMgUKbCSa4" Ids="LGm9sjMQIgBPGY9q2tpvxN,Rb5ghDkz1tJMdJ2mZGRw3d" IsHidden="true" />
+          <Link Id="CnVBoSTMeDDMuUyvUH7KIj" Ids="KtcCj3AGE8BMADlsS8gYYR,FlBn2t3yo3SMEnfYeCvFuy" />
+          <Link Id="MALQYy03hWvMe01ouCxGUl" Ids="FlBn2t3yo3SMEnfYeCvFuy,RFRGjp2QVeuO3OWKMqiSKN" IsHidden="true" />
+          <Patch Id="Jgms8STmiAEOQdie6lH0l5" Name="GetFFT4Bands">
+            <Pin Id="LNDeaiGf4sdPDs6eegZ0D5" Name="Bass" Kind="OutputPin" />
+            <Pin Id="DXfB2raa7pDOUj6tLWKUNf" Name="LoMid" Kind="OutputPin" />
+            <Pin Id="Rb5ghDkz1tJMdJ2mZGRw3d" Name="HiMid" Kind="OutputPin" />
+            <Pin Id="RFRGjp2QVeuO3OWKMqiSKN" Name="High" Kind="OutputPin" />
+          </Patch>
+          <Link Id="NeRpPkEpipSM9w3G1WDUDy" Ids="BhdgVatxJcUO71XXZ8rNaM,RPLVooC04SHPji6OVyBAe8" />
+          <Link Id="V65ZhlO0WCOPgn858m8CSp" Ids="BhdgVatxJcUO71XXZ8rNaM,AbOdskAJWA0N8F3UswS9QS" />
+          <Link Id="MbiMxZdwcJ6L5wbtihUZrZ" Ids="MrDS3vxehshPrpTVPzeQMu,Lp0mO4g0UpoP6rBZOKzJry" />
+          <Link Id="MKp6VxhoH2mLEIFOvZDeqj" Ids="DF49KaxQPsZLO2ILrrVK0X,Vaa577u8jHwMQ6Hnq9DjaR" />
+          <Slot Id="L80I77T4Eu8PkF6pyTlZIP" Name="Meter" />
+          <Link Id="AoENwFxgW1tOwJWGX4grvn" Ids="RPLVooC04SHPji6OVyBAe8,IOcTNI2Wgy2L6rJhD0GSI7" />
+          <Link Id="TiePMNnzipVN3RxnGQpdZR" Ids="IOcTNI2Wgy2L6rJhD0GSI7,EJVHPdr9YzhOHOKQd0uDYG" IsHidden="true" />
+          <Patch Id="NUDyh4FVm84Nurc3QzMwiy" Name="GetMeter">
+            <Pin Id="EJVHPdr9YzhOHOKQd0uDYG" Name="Meter" Kind="OutputPin" />
+          </Patch>
+          <Link Id="OpgDtPb3wLDPgOz58djcNB" Ids="DF49KaxQPsZLO2ILrrVK0X,JDoX299Vf22OGQ2UivKhFX" />
+          <Slot Id="CrBKkEgUaQjNlQ9UVr0f2F" Name="Normalized Meter" />
+          <Link Id="QqfEOTZULpfNH2kgZHRwDA" Ids="JDoX299Vf22OGQ2UivKhFX,Ela7fBjsNVHLvEsXMHsUbP" />
+          <Link Id="CZu40G431OIMlC4QYRntg9" Ids="Ela7fBjsNVHLvEsXMHsUbP,MsAElu0QLDeMzPlYQhfLgs" IsHidden="true" />
+          <Patch Id="O94KvdY9clwNn51V3XLn3S" Name="GetNormalizedMeter">
+            <Pin Id="MsAElu0QLDeMzPlYQhfLgs" Name="Normalized Meter" Kind="OutputPin" />
+          </Patch>
+          <Link Id="Pk6iB4rJrguNELXjBYRz2g" Ids="Tz7MYv6KkNeOfe6ZFiOtUt,RUq1nrBzvA5NCploOk0RIF" />
+          <Link Id="VIt0lEUjzCRPM3s01bbRPG" Ids="Sd5j66O1RpYNgN2YDj5jF5,IistzG1W82qLKdmbsiwgk8" />
+          <Link Id="LxsErIWmbD4QKnRq5jo2Dx" Ids="Ks5wryod9yaMslg1kNRJnM,HZ6yBQmL9UtPdDhQIc3euG" />
+          <Link Id="GvGBOmJEj1wLBRrVOixsug" Ids="BhdgVatxJcUO71XXZ8rNaM,Tp52cR6hTrSNZf3SBx4Wwy" />
+          <Link Id="P00yqRnPn7RPEddqyIM3c3" Ids="BhdgVatxJcUO71XXZ8rNaM,MNHN6dqFDBtMiwIYVbEpJC" />
+          <Link Id="NMvDxJf0LVSP5O8kOz8vnw" Ids="PuwDnsn0qZAN8kTJQqR6bm,BMyA4hAozHxQRstC68kMDs" />
+          <Link Id="B6CjIFmtnHlNve46NKOaxR" Ids="Kwj5413QOVpL8j8CVx3l1u,AkMdFa1t1dEOwvIbGe4sV7" />
+          <Link Id="McaUcV2iICBOjoSyFcjzBp" Ids="K16W93J1VwLOGst1bR7bM4,IOCmwPiXGXcNlKSHoNGzxt" />
+          <Link Id="OHyIbjq3xBBOkl3okOPjFy" Ids="IuKRy3DPqHULOS17MDiqNS,K6W46j1otFrNPvRN1fj5Xy" />
+          <Link Id="FJs1GU3L60rOJT4mA8JTJa" Ids="RmwgjdlJHMgOtqKR5JwiVR,Rq1ftIKRFeVO2RvRcqTXHJ" />
+          <Link Id="BBZ9NIgd4fMNOLz7foVZTj" Ids="Sh3iP6EXNhNLJMiosPNVqp,LiwJalZefTrP8aOA9W2xpO" />
+          <Link Id="Bqe6ykKmUrdPWL0AoT8VSv" Ids="RQEhvMML1unPfnWy5Fx57B,BnWi4eAToxbL6r5pjcvtDZ" />
+          <Link Id="GrEJXFQCdFJMH7YUSvS6Y9" Ids="GtiQfYSZ5RvO21bZ3Vn8Li,LIMfn9bPRdkMNPJf4vVzNb" />
+          <Link Id="TJvMwSl1STFOrqUSTbnFgr" Ids="GtiQfYSZ5RvO21bZ3Vn8Li,EavACCEtqvlMFQdDXmYSd9" />
+          <Link Id="Jp8OlbRSbOcPqXi4HZPvSG" Ids="GtiQfYSZ5RvO21bZ3Vn8Li,N71MkrinXiuNa9kmuMFkYM" />
+          <Link Id="Br07sVzkmLVOOJY73el3Ad" Ids="Qv4YSu7MsGVNiTTCHYAyhV,A98ngWnXkVxPUItOhihq7A" />
+          <Link Id="Fx3PqexG3ulLqIKKTRRmJP" Ids="KiHMaPLAPsZQUBeFPrY4cE,Q5eBbPNagedOT56cEITL1l" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="EmQ5U7cB9KPLtHbwJndKpK">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RmNhGztu8JlOfxFynaXjAt">
+        <Canvas Id="PWVokjNxagzM5N1ZQvJnsK" CanvasType="Group" />
+        <Patch Id="GjWNBK20EQXOJ9PTYH7lhn" Name="Create" />
+        <Patch Id="U8Hz5fsXy8WNBVcm5Co0Aq" Name="Update" />
+        <ProcessDefinition Id="B9l4Y8oVyuAOrKWZ0zlU7c">
+          <Fragment Id="AlSUxsiSK46PsjgZgBEOtH" Patch="GjWNBK20EQXOJ9PTYH7lhn" Enabled="true" />
+          <Fragment Id="PwDBfnSAb7WNHuZpJdmewo" Patch="U8Hz5fsXy8WNBVcm5Co0Aq" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="O3GKSo8uTp4Nh1Df7gDMOZ" Location="VL.Stride" Version="0.8.12-g88f31c4e46" />
+  <NugetDependency Id="L35afkpjVqUL8NRaD5h374" Location="VL.Audio" Version="0.2.3-alpha" />
+</Document>

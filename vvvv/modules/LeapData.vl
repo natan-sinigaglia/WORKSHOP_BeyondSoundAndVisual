@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="ENaLijJ4iRzMFTGgNirUEM" LanguageVersion="2020.3.0.42" Version="0.128">
+  <NugetDependency Id="CPE4jmsgNiRQIr5gLg6wUK" Location="VL.CoreLib" Version="2020.3.0-0042-g1a9a5c158d" />
+  <Patch Id="KGsMFFAM8ptOcnHnNwRYYu">
+    <Canvas Id="DuAdyuOj829PJWJcaJrNTj" DefaultCategory="LeapData" CanvasType="FullCategory">
+      <!--
+
+    ************************ LeapData ************************
+
+-->
+      <Node Name="LeapData" Bounds="234,190" Id="E3luighiCkPMBin71LH9Q1">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="ANwXE70Kd83O7gYaciLFOw">
+          <Canvas Id="PYk88SmTndhP2DwHBOgKEo" CanvasType="Group">
+            <Node Bounds="267,169,145,19" Id="CX54awPQnTkLJVVYOEJsbS">
+              <p:NodeReference LastCategoryFullName="Devices" LastSymbolSource="VL.Devices.Leap.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Leap" />
+              </p:NodeReference>
+              <Pin Id="SU3KE6vcsPtQTRdlcTdAQS" Name="Enable Data in Background" Kind="InputPin" />
+              <Pin Id="DpKnfsJat14Owh1NfqYSJI" Name="Enable Images" Kind="InputPin" />
+              <Pin Id="OvOXIX24U4kOrDaAwBWCnR" Name="Enable Head Mount Optimization" Kind="InputPin" />
+              <Pin Id="IyC98anByojLZLVznhCuDZ" Name="Swipe Gesture" Kind="InputPin" />
+              <Pin Id="G79rBylhD3hP3B43kB71BC" Name="Circle Gesture" Kind="InputPin" />
+              <Pin Id="TOlVPlDTPLrM4zm6kX7iF3" Name="Screen Tap Gesture" Kind="InputPin" />
+              <Pin Id="DaRZH9RZ1KZO8B0hzHx4EA" Name="Key Tap Gesture" Kind="InputPin" />
+              <Pin Id="O0cB9NITVQPLXrR20FDHX5" Name="Enabled" Kind="InputPin" />
+              <Pin Id="ND4zBJQcexqNenR5aDVdOt" Name="Frame" Kind="OutputPin" />
+              <Pin Id="LqDH154xNOZM4yy6L7h9mv" Name="Is Connected" Kind="OutputPin" />
+              <Pin Id="UhKWUFq5wqoOq1RBeobuE2" Name="IsServiceConnected" Kind="OutputPin" />
+              <Pin Id="GHRanomm7rDM1PfMHsEg8B" Name="Devices" Kind="OutputPin" />
+              <Pin Id="JI8CwjAXrLCLbC02k5SmDG" Name="Data in Background Enabled" Kind="OutputPin" />
+              <Pin Id="EMJB4xX5jTaNjFPXvNsPgN" Name="Images Enabled" Kind="OutputPin" />
+              <Pin Id="TusLD81cK5nOf0v0TB8JPh" Name="Head Mount Optimization Enabled" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="267,234,65,19" Id="FIRvOO8bDdPMPlJlaZYNQL">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+              </p:NodeReference>
+              <Pin Id="TsRrDjJIzFXLfGHPHDxtB2" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="ARdoMfxuehXOu01ixnj2jA" Name="Reset" Kind="InputPin" />
+              <Pin Id="IdMBAZ6zmyqO8zHO8YvqYC" Name="Value" Kind="OutputPin" />
+              <Pin Id="NI05GxeM8UbMz6T2MgMRUp" Name="On Data" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="SPq3x0TRKhzLOXkpcsHL94" Bounds="409,138" />
+            <Node Bounds="267,284,45,19" Id="Vyndik15WUUNkYkUqWnNoA">
+              <p:NodeReference LastCategoryFullName="Devices.Leap.Frame" LastSymbolSource="VL.Devices.Leap.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Frame" />
+                <Choice Kind="OperationCallFlag" Name="Hands" />
+              </p:NodeReference>
+              <Pin Id="P2LsXtsMB0yMSAJMRchgeU" Name="Frame" Kind="InputPin" />
+              <Pin Id="E4UpcGZANXsLcY8dQZiCUB" Name="Hands" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Si0SRTufxXkPsjLxXQdzLy" SlotId="FE0GUEWtLwHLfBafzVeAJ4" Bounds="269,343" />
+            <ControlPoint Id="T7Uoo3aIPWwPh6HQyDocXz" Bounds="269,376" />
+            <Node Bounds="438,289,56,19" Id="MJFTVX6obnwLIhewvIFdOK">
+              <p:NodeReference LastCategoryFullName="Devices.Leap.Frame" LastSymbolSource="VL.Devices.Leap.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Frame" />
+                <Choice Kind="OperationCallFlag" Name="Gestures" />
+              </p:NodeReference>
+              <Pin Id="EzklzDwWEdIOlZJ1zcJ9OD" Name="Frame" Kind="InputPin" />
+              <Pin Id="TxVaMQ7MQHLLfTeXyuip69" Name="Gestures" Kind="OutputPin" />
+            </Node>
+            <Pad Id="JLi4u0g0YCKPxNuQWEJCI1" SlotId="ImMWSJzLc8dM12uvlVhBnU" Bounds="440,343" />
+            <ControlPoint Id="CtEBVt3LToaMtHSgw63oE0" Bounds="440,376" />
+          </Canvas>
+          <Patch Id="UuIJi4W6aiaMDIknjG4H2U" Name="Create" />
+          <ProcessDefinition Id="Tsz3myfkfueM1DdoD1Wrij" HasStateOut="true">
+            <Fragment Id="NauSRu7hjrwOBQlxTjWrec" Patch="UuIJi4W6aiaMDIknjG4H2U" Enabled="true" />
+            <Fragment Id="NcasL2HIxiXLYsSVB2wCko" Patch="IEQtC4PFbASMdAR3Zed7oG" Enabled="true" />
+            <Fragment Id="C5RNwjUzVVWNjp9v9WqpBV" Patch="DXZi2MNAdIZLeSooljSLAl" />
+            <Fragment Id="DSp9zkE2ud8MNPtnJ1JX8W" Patch="Tkf9PyfObq2Ong9qhIUQN8" />
+          </ProcessDefinition>
+          <Link Id="PZa9tWGUYhuMWV5hpNpJrR" Ids="ND4zBJQcexqNenR5aDVdOt,TsRrDjJIzFXLfGHPHDxtB2" />
+          <Patch Id="IEQtC4PFbASMdAR3Zed7oG" Name="Update" ParticipatingElements="PZa9tWGUYhuMWV5hpNpJrR">
+            <Pin Id="CHoREOLln7hPOelMuY9x8F" Name="Enabled" Kind="InputPin" Bounds="410,119" />
+          </Patch>
+          <Link Id="Sxe9sJ3pQvfMaYVdr2bkSM" Ids="SPq3x0TRKhzLOXkpcsHL94,O0cB9NITVQPLXrR20FDHX5" />
+          <Link Id="Uid1R8ZKYKBMhrPJtRr6M0" Ids="CHoREOLln7hPOelMuY9x8F,SPq3x0TRKhzLOXkpcsHL94" IsHidden="true" />
+          <Link Id="N4stET4ZhQJN5OENsR0Zmo" Ids="IdMBAZ6zmyqO8zHO8YvqYC,P2LsXtsMB0yMSAJMRchgeU" />
+          <Slot Id="FE0GUEWtLwHLfBafzVeAJ4" Name="Hands" />
+          <Link Id="R1R40NUrODTONaoytGQk7I" Ids="E4UpcGZANXsLcY8dQZiCUB,Si0SRTufxXkPsjLxXQdzLy" />
+          <Link Id="Grx8zJXWNHGMx6aq8BBnqX" Ids="Si0SRTufxXkPsjLxXQdzLy,T7Uoo3aIPWwPh6HQyDocXz" />
+          <Link Id="HPE8QRUIXlWMMwoo9SWabv" Ids="T7Uoo3aIPWwPh6HQyDocXz,UpSQoo8dfEBMeu4sL2cKU2" IsHidden="true" />
+          <Patch Id="DXZi2MNAdIZLeSooljSLAl" Name="GetHands">
+            <Pin Id="UpSQoo8dfEBMeu4sL2cKU2" Name="Hands" Kind="OutputPin" />
+          </Patch>
+          <Link Id="K787h3DwkAlLufAlDKXRPP" Ids="IdMBAZ6zmyqO8zHO8YvqYC,EzklzDwWEdIOlZJ1zcJ9OD" />
+          <Slot Id="ImMWSJzLc8dM12uvlVhBnU" Name="Gestures" />
+          <Link Id="E4hdzOtpUchNQtgrook6Zq" Ids="TxVaMQ7MQHLLfTeXyuip69,JLi4u0g0YCKPxNuQWEJCI1" />
+          <Link Id="JacdXGHBEaFMjNbbS9MF67" Ids="JLi4u0g0YCKPxNuQWEJCI1,CtEBVt3LToaMtHSgw63oE0" />
+          <Link Id="UXRariKuPeTQJiLbJdB0HO" Ids="CtEBVt3LToaMtHSgw63oE0,FAQEo3yd7dFN7AgMiFmreO" IsHidden="true" />
+          <Patch Id="Tkf9PyfObq2Ong9qhIUQN8" Name="GetGestures">
+            <Pin Id="FAQEo3yd7dFN7AgMiFmreO" Name="Gestures" Kind="OutputPin" />
+          </Patch>
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="U0wbTT2esNbN8rdeACys4S">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="HfQ82yP0VOFP5zkNZVirT4">
+        <Canvas Id="D7Mja9SprihNNL3qQLz41l" CanvasType="Group" />
+        <Patch Id="FfV7q3fzVe8Oz6uzbVSK1w" Name="Create" />
+        <Patch Id="QMmKvc4uw2jPmiGrbCLowy" Name="Update" />
+        <ProcessDefinition Id="LlWj26FQBTYP07npKC3UyM">
+          <Fragment Id="NJ3OVhPMlg9LGzuEVufd4u" Patch="FfV7q3fzVe8Oz6uzbVSK1w" Enabled="true" />
+          <Fragment Id="VLiaImGpVnlLoFhO9I708t" Patch="QMmKvc4uw2jPmiGrbCLowy" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="LbTn79w3lobNiwYFnNL1Pk" Location="VL.Stride" Version="0.8.12-g88f31c4e46" />
+  <NugetDependency Id="OSJdhpvGB9iPVxUo9jGohr" Location="VL.Devices.Leap" Version="2020.3.0-0042-g1a9a5c158d" />
+</Document>
